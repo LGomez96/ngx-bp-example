@@ -1,0 +1,13 @@
+<div class="ngx-header">
+  <div class="block">
+    <ng-content select="[logo]"></ng-content>
+  </div>
+  <div class="block">
+    <ul>
+      <li [routerLink]="item.router"
+        *ngFor="let item of links">
+      {{item.name}}
+      </li>
+    </ul>
+  </div>
+</div>

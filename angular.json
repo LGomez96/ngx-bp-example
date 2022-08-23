@@ -23,6 +23,7 @@
               "src/assets"
             ],
             "styles": [
+              "projects/ngx-bp-example/src/assets/css/ngx-bp-examples.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -93,6 +94,37 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        }
+      }
+    },
+    "ngx-bp-example": {
+      "projectType": "library",
+      "root": "projects/ngx-bp-example",
+      "sourceRoot": "projects/ngx-bp-example/src",
+      "prefix": "ngx-bp",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-bp-example/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-bp-example/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-bp-example/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-bp-example/src/test.ts",
+            "tsConfig": "projects/ngx-bp-example/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-bp-example/karma.conf.js"
           }
         }
       }
