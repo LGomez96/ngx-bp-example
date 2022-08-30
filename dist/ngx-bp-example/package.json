@@ -1,0 +1,35 @@
+{
+  "name": "ngx-bp-example",
+  "version": "0.0.4",
+  "peerDependencies": {
+    "@angular/common": "^14.1.0",
+    "@angular/core": "^14.1.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "author": {
+    "name": "L Gomez & J Garzon",
+    "url": "https://github.com/LGomez96/ngx-bp-example/tree/master"
+  },
+  "module": "fesm2015/ngx-bp-example.mjs",
+  "es2020": "fesm2020/ngx-bp-example.mjs",
+  "esm2020": "esm2020/ngx-bp-example.mjs",
+  "fesm2020": "fesm2020/ngx-bp-example.mjs",
+  "fesm2015": "fesm2015/ngx-bp-example.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/ngx-bp-example.mjs",
+      "es2020": "./fesm2020/ngx-bp-example.mjs",
+      "es2015": "./fesm2015/ngx-bp-example.mjs",
+      "node": "./fesm2015/ngx-bp-example.mjs",
+      "default": "./fesm2020/ngx-bp-example.mjs"
+    }
+  },
+  "sideEffects": false
+}
