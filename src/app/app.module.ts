@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { UiCardModule, UiHeaderModule, UiInputModule } from 'projects/ngx-bp-example/src/public-api';
+import { UiCardModule, UiDragAndDropModule, UiHeaderModule, UiInputModule } from 'projects/ngx-bp-example/src/public-api';
 
 import { AppComponent } from './app.component';
 
@@ -12,7 +12,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     UiHeaderModule,
     UiInputModule,
-    UiCardModule
+    UiCardModule,
+    UiDragAndDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
